@@ -10,4 +10,9 @@
     <Folder Include="Mapping\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NHibernate" Version="5.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
 </Project>

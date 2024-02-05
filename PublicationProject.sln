@@ -17,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{E0CFBD44
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{72EA4BDB-5908-4D8E-8D16-94BB0E2911FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicationProject", "PublicationProject\PublicationProject.csproj", "{67FECD07-69F3-4086-8708-1784EF465327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicationProject", "PublicationProject\PublicationProject.csproj", "{67FECD07-69F3-4086-8708-1784EF465327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E28FDAF3-F1E9-43A2-B173-6C562036949A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{E28FDAF3-F1E9-43A2-B173-6C562036949A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6091E649-9AE3-4A31-9A38-F0E7BC36F1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{6091E649-9AE3-4A31-9A38-F0E7BC36F1A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{AF15D6C4-C280-48D8-BF7D-ED1E6C023468}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{AF15D6C4-C280-48D8-BF7D-ED1E6C023468}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
