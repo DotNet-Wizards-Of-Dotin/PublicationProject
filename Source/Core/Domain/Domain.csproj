@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\Schema\HR\" />
-    <Folder Include="Contract\Schema\" />
+    <Folder Include="Concrete\Schema\Accounting\" />
+    <Folder Include="Contract\Schema\Accounting\" />
   </ItemGroup>
 
 </Project>

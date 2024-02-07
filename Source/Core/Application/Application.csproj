@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Schema\HR\" />
+    <Folder Include="Schema\Accounting\" />
   </ItemGroup>
 
   <ItemGroup>
