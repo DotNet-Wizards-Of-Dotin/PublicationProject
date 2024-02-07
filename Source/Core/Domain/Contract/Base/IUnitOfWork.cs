@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Contract.Schema.Accounting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Domain.Contract.Base
     {
         void Commit();
         void RollBack();
-        //IRoleRepository RoleRepository { get; }
-        //IPersonRepository PersonRepository { get; }
+        IUserRepository UserRepository { get; }
+       
     }
 }

@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Concrete\Schema\Accounting\" />
-    <Folder Include="Contract\Schema\Accounting\" />
-  </ItemGroup>
-
 </Project>
