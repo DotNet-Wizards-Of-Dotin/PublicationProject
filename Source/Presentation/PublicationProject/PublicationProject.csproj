@@ -10,4 +10,10 @@
     <PackageReference Include="NHibernate" Version="5.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Application\Application.csproj" />
+    <ProjectReference Include="..\..\Core\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\Data\Persistence\Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

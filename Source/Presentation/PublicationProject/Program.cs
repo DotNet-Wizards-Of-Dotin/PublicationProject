@@ -14,7 +14,7 @@ public class Program
         builder.Services.AddControllersWithViews();
 
 
-        var connection = "data source=.;initial catalog=DotNetWizardsPublication;";
+        var connection = "data source=.;initial catalog=Publication;";
         builder.Services.AddNHibernate(connection);
 
 
