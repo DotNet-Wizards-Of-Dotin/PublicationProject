@@ -1,4 +1,6 @@
-﻿using Domain.Contract.Base;
+﻿using Application.Schema.Accounting;
+using Domain.Contract.Base;
+using Domain.Contract.Schema.Accounting;
 using NHibernate;
 using System;
 using System.Collections.Generic;
@@ -26,9 +28,17 @@ namespace Application.Base
             _transaction = _session.BeginTransaction();
         }
 
+        private IUsersRepository _UsersRepository =null!;
         //private IRoleRepository _roleRepository = null!;
         //private IPersonRepository _personRepository = null!;
-
+        public IUsersRepository UsersRepository
+        {
+            get
+            {
+                _UsersRepository ??= new UsersRepository(_session);
+                return _UsersRepository;
+            }
+        }
         //public IPersonRepository PersonRepository
         //{
         //    get

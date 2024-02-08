@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Contract.Schema.Accounting
 {
-    public interface IUserRepository : IBaseRepository<User>
+    public interface IUsersRepository : IBaseRepository<Users>
     {
     }
 }

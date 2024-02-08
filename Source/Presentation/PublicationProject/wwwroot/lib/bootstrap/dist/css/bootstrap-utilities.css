@@ -1467,22 +1467,22 @@
   background-image: var(--bs-gradient) !important;
 }
 
-.user-select-all {
-  -webkit-user-select: all !important;
-  -moz-user-select: all !important;
-  user-select: all !important;
+.Users-select-all {
+  -webkit-Users-select: all !important;
+  -moz-Users-select: all !important;
+  Users-select: all !important;
 }
 
-.user-select-auto {
-  -webkit-user-select: auto !important;
-  -moz-user-select: auto !important;
-  user-select: auto !important;
+.Users-select-auto {
+  -webkit-Users-select: auto !important;
+  -moz-Users-select: auto !important;
+  Users-select: auto !important;
 }
 
-.user-select-none {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  user-select: none !important;
+.Users-select-none {
+  -webkit-Users-select: none !important;
+  -moz-Users-select: none !important;
+  Users-select: none !important;
 }
 
 .pe-none {
