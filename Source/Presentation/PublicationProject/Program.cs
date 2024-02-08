@@ -1,5 +1,6 @@
 using Application.Base;
 using Domain.Contract.Base;
+using Microsoft.AspNetCore.Builder;
 using PublicationProject.Infra;
 
 namespace PublicationProject;
@@ -14,7 +15,7 @@ public class Program
         builder.Services.AddControllersWithViews();
 
 
-        var connection = "data source=.;initial catalog=Publication;";
+        var connection = "Server=.;Database=Publication;Trusted_Connection=True;";
         builder.Services.AddNHibernate(connection);
 
 
