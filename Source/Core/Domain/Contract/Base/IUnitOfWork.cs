@@ -12,6 +12,7 @@ namespace Domain.Contract.Base
         void Commit();
         void RollBack();
         IUsersRepository UsersRepository { get; }
+        IRolesRepository RolesRepository { get; }
        
     }
 }

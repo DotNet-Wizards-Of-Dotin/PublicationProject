@@ -3,7 +3,7 @@
 				   assembly="Domain"
 				   namespace="Domain.Concrete.Schema.Accounting">
 	
-	<class name="Roles" table="Roles" schema="Accounting" >
+	<class name="Roles" table="Roles" schema="dbo" >
 		<id name="Id" type="Byte" >
 			<column name="Id" not-null="true" sql-type="tinyint"/>
 			<generator class="identity" />

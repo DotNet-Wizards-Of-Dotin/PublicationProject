@@ -35,7 +35,7 @@
 		<property name="IsDeleted" type="Boolean">
 			<column name="IsDeleted" not-null="true" sql-type="bit"/>
 		</property>
-		<many-to-one name="Role" class="Role">
+		<many-to-one name="Roles" class="Roles">
 			<column name="RoleId" not-null="false" sql-type="tinyint"/>
 		</many-to-one>
 	</class>
