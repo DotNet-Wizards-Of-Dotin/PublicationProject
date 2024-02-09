@@ -52,7 +52,7 @@ namespace Domain.Concrete.Schema.Accounting
         public virtual string ProfilePhoto { get; set; }
         public virtual DateTime CreationDate { get; set; }
         public virtual Boolean IsDeleted { get; set; }
-        public virtual Role Role { get; set; }
+        public virtual Roles Role { get; set; }
 
         public override string ToString()
         {
