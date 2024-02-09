@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="Domain"
+				   namespace="Domain.Concrete.Schema.Accounting">
+	
+	<class name="Roles" table="Roles" schema="dbo" >
+		<id name="Id" type="Byte" >
+			<column name="Id" not-null="true" sql-type="tinyint"/>
+			<generator class="identity" />
+		</id>
+		<property name="Name" type="String" >
+			<column name="Name" not-null="true" length="100" sql-type="nvarchar" />
+		</property>
+		<property name="CreationDate" type="DateTime">
+			<column name="CreationDate" not-null="true" sql-type="datetime2"/>
+		</property>
+		<property name="IsDeleted" type="Boolean">
+			<column name="IsDeleted" not-null="true" sql-type="bit"/>
+		</property>
+		<set name="Users" inverse="true" generic="true">
+			<key>
+				<column name="RoleId" />
+			</key>
+			<one-to-many class="Users" />
+		</set>
+	</class>
+</hibernate-mapping>
