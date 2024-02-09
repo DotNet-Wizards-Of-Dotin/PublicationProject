@@ -1,7 +1,14 @@
-﻿namespace Domain.Concrete.Schema.Accounting
+﻿using Domain.Concrete.Base;
+
+namespace Domain.Concrete.Schema.Accounting
 {
-    public class Roles
+    public class Roles : BaseEntity
     {
+        public Roles()
+        {
+            Name = "hamid";
+            IsDeleted = false;
+        }
         public virtual byte Id { get; set; }
         public virtual string? Name { get; set; }
         public virtual DateTime CreationDate { get; set; }

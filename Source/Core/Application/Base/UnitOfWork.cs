@@ -29,8 +29,7 @@ namespace Application.Base
         }
 
         private IUsersRepository _UsersRepository =null!;
-        //private IRoleRepository _roleRepository = null!;
-        //private IPersonRepository _personRepository = null!;
+        private IRolesRepository _RolesRepository = null!;
         public IUsersRepository UsersRepository
         {
             get
@@ -39,23 +38,15 @@ namespace Application.Base
                 return _UsersRepository;
             }
         }
-        //public IPersonRepository PersonRepository
-        //{
-        //    get
-        //    {
-        //        _personRepository ??= new PersonRepository(_session);
-        //        return _personRepository;
-        //    }
-        //}
-
-        //public IRoleRepository RoleRepository
-        //{
-        //    get
-        //    {
-        //        _roleRepository ??= new RoleRepository(_session);
-        //        return _roleRepository;
-        //    }
-        //}
+        public IRolesRepository RolesRepository
+        {
+            get
+            {
+                _RolesRepository ??= new RolesRepository(_session);
+                return _RolesRepository;
+            }
+        }
+    
 
         public void Commit()
         {
