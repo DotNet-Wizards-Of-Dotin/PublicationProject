@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="BM.Domain"
+                   namespace="BM.Domain.BookCategories" >
+
+	<class name="BookCategory" table="BookCategories" schema="Book" >
+		<id name="Id" type="Byte"  >
+			<column name="Id" not-null="true" precision="3" scale="0" sql-type="tinyint"  />
+			<generator class="identity" />
+		</id>
+		<property name="Name" type="String"   >
+			<column name="Name" not-null="true" length="255" sql-type="nvarchar"  />
+		</property>
+		<property name="Description" type="String" >
+			<column name="Description" not-null="true" length="500" sql-type="nvarchar"  />
+		</property>
+		<property name="Picture" type="String" >
+			<column name="Picture" not-null="true" length="1000" sql-type="nvarchar"  />
+		</property>
+		<property name="PictureAlt" type="String" >
+			<column name="PictureAlt" not-null="true" length="255" sql-type="nvarchar"  />
+		</property>
+		<property name="PictureTitle" type="String"  >
+			<column name="PictureTitle" not-null="true" length="500" sql-type="nvarchar"  />
+		</property>
+		<property name="KeyWords" type="String" >
+			<column name="KeyWords" not-null="true" length="80" sql-type="nvarchar"  />
+		</property>
+		<property name="MetaDescription" type="String" >
+			<column name="MetaDescription" not-null="true" length="120" sql-type="nvarchar"  />
+		</property>
+		<property name="Slug" type="String" >
+			<column name="Slug" not-null="true" length="300" sql-type="nvarchar"  />
+		</property>
+		<property name="CreationDate" type="DateTime" >
+			<column name="CreationDate" not-null="true" sql-type="datetime2"  />
+		</property>
+		<property name="IsDeleted" type="Boolean" >
+			<column name="IsDeleted" not-null="true" sql-type="bit"  />
+		</property>
+		<set name="Books" table="Books" >
+			<key>
+				<column name="BookCategoryId" />
+			</key>
+			<one-to-many class="BM.Domain.Books.Book" />
+		</set>
+	</class>
+</hibernate-mapping>

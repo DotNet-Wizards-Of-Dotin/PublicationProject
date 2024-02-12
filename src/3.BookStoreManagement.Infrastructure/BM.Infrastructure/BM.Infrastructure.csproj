@@ -6,4 +6,24 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Mapping\Book.hbm.xml" />
+    <None Remove="Mapping\BookCategory.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Book.hbm.xml" />
+    <EmbeddedResource Include="Mapping\BookCategory.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NHibernate" Version="5.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\0.Framework\FW.Infrastructure\FW.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\1.BookStoreManagement.Domain\BM.Domain\BM.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
