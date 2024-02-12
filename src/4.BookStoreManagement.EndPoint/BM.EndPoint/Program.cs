@@ -1,3 +1,6 @@
+using BM.Infrastructure.Config;
+using FW.Application;
+
 namespace BM.EndPoint
 {
 	public class Program
@@ -8,6 +11,9 @@ namespace BM.EndPoint
 
 			// Add services to the container.
 			builder.Services.AddControllersWithViews();
+			var cs = builder.Configuration.GetConnectionString("cs");
+			builder.Services.AddConfiguration(cs);
+			builder.Services.AddSingleton<IFileUploader,FileUploader>();
 
 			var app = builder.Build();
 
