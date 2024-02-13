@@ -26,4 +26,16 @@
     <ProjectReference Include="..\..\1.BookStoreManagement.Domain\BM.Domain\BM.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Mapping\User.hbm.xml">
+      <Generator>DevartHibernateGenerator</Generator>
+      <LastGenOutput>User.hbm.info</LastGenOutput>
+    </None>
+    <None Update="Mapping\User.hbm.info">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>User.hbm.xml</DependentUpon>
+    </None>
+  </ItemGroup>
+
 </Project>
